@@ -1,0 +1,24 @@
+{
+  "name": "Coreplus",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Lorvent"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-calendar": "^0.2.5"
+  }
+
+
+}

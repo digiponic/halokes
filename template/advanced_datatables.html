@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Tables | Core + Admin Template </title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- global css -->
+    <link type="text/css" rel="stylesheet" href="css/app.css"/>
+    <!-- end of global css -->
+    <!--page level css -->
+    <!--page level css -->
+    <link rel="stylesheet" type="text/css"
+          href="vendors/datatables/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="vendors/datatables/css/buttons.bootstrap4.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/datatables/css/rowReorder.bootstrap4.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/datatables/css/colReorder.bootstrap4.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="vendors/datatables/css/scroller.bootstrap4.css"/>
+    <link rel="stylesheet" type="text/css" href="css/custom_css/datatables_custom.css">
+    <!--end of page level css-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!--end of page level css-->
+</head>
+
+<body class="skin-coreplus">
+<div class="preloader">
+    <div class="loader_img"><img src="img/loader.gif" alt="loading..." height="64" width="64"></div>
+</div>
+<!-- header logo: style can be found in header-->
+<header class="header">
+    <nav class="navbar navbar-expand-md navbar-static-top">
+        <a href="index " class="logo navbar-brand">
+            <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            <img src="img/logo.png" alt="logo"/>
+        </a>
+
+        <!-- Header Navbar: style can be found in header-->
+        <!-- Sidebar toggle button-->
+        <!-- Sidebar toggle button-->
+        <div>
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button"> <i
+                    class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+
+
+        <div class="navbar-collapse " id="navbarNav">
+            <div class="navbar-right ml-auto">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item dropdown messages-menu">
+                        <a href="#" class="nav-link dropdown-toggle"> <i
+                                class="fa fa-fw fa-envelope-o black"></i>
+                            <span class="label bg-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages table-striped">
+                            <li class="dropdown-title">New Messages</li>
+                            <li class="msg-set message striped-col">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar7.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body"><strong>Ernest Kerry</strong>
+                                        <br>
+                                        Can we Meet?
+                                        <br>
+                                        <small>Just Now</small>
+                                        <span class="label bg-success label-mini msg-lable">New</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="msg-set message">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar6.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body"><strong>John</strong>
+                                        <br>
+                                        Dont forgot to call...
+                                        <br>
+                                        <small>5 minutes ago</small>
+                                        <span class="label bg-success label-mini msg-lable">New</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="msg-set message striped-col">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar5.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>Wilton Zeph</strong>
+                                        <br>
+                                        If there is anything else &hellip;
+                                        <br>
+                                        <small>14/10/2014 1:31 pm</small>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="msg-set message">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar1.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Jenny Kerry</strong>
+                                        <br>
+                                        Let me know when you free
+                                        <br>
+                                        <small>5 days ago</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="msg-set message striped-col">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Tony</strong>
+                                        <br>
+                                        Let me know when you free
+                                        <br>
+                                        <small>5 days ago</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer"><a href="#">View All messages</a></li>
+                        </ul>
+
+                    </li>
+                    <!--tasks-->
+                    <li class="nav-item dropdown tasks-menu d-none d-sm-block">
+                        <a href="#" class=" nav-link dropdown-toggle">
+                            <i class="fa fa-fw fa-edit black"></i>
+                            <span class="label bg-primary">4</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li class="dropdown-title ">You Have 4 Tasks</li>
+                            <li class="message striped-col">
+                                <a href="" class=" ">
+                                    Design some buttons
+                                    <small class="pull-right">20%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-primary" style="width: 20%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class="">
+                                    Create a nice theme
+                                    <small class="pull-right">40%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-success" style="width: 40%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message striped-col">
+                                <a href="" class="">
+                                    Some task I need to do
+                                    <small class="pull-right">60%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-danger" style="width: 60%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class="">
+                                    Make beautiful transitions
+                                    <small class="pull-right">80%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-warning" style="width: 80%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer"><a href="#"> View All Tasks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown_message">
+                        <a href="#" class="nav-link dropdown-toggle toggle-right">
+                            <i class="fa fa-fw fa-comments-o black"></i>
+                            <span class="label bg-danger">9</span>
+                        </a>
+                    </li>
+                    <!-- Notifications: style can be found in dropdown-->
+                    <li class="nav-item dropdown notifications-menu">
+                        <a href="#" class="nav-link dropdown-toggle" >
+                            <i class="fa fa-fw fa-bell-o black"></i>
+                            <span class="label bg-warning">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li class="dropdown-title">You have 8 notifications</li>
+
+                            <li class="message striped-col">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar3.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>John Doe</strong>
+                                        <br>
+                                        5 members joined today
+                                        <br>
+                                        <span class="noti-date">Just now</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Tony</strong>
+                                        <br>
+                                        likes a photo of you
+                                        <br>
+                                        <span class="noti-date">5 min</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message striped-col">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar6.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>John</strong>
+                                        <br>
+                                        Dont forgot to call...
+                                        <br>
+                                        <span class="noti-date">11 min</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar1.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Jenny Kerry</strong>
+                                        <br>
+                                        Very long description here...
+                                        <br>
+                                        <span class="noti-date">1 Hour</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message striped-col">
+                                <a href="" class=" icon-not ">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar7.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>Ernest Kerry</strong>
+                                        <br>
+                                        2 members joined today
+                                        <br>
+                                        <span class="noti-date">3 Days</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer"><a href="#"> View All Notifications</a></li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown-->
+                    <li class="nav-item dropdown user user-menu">
+                        <a href="#" class="nav-link dropdown-toggle padding-user pt-3">
+                            <img src="img/authors/avatar1.jpg" width="35"
+                                 class="rounded-circle img-fluid pull-left"
+                                 height="35" alt="User Image">
+                            <div class="riot">
+                                <div>
+                                    Natali
+                                    <span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="img/authors/avatar1.jpg" class="rounded-circle" alt="User Image">
+                                <p> Nataliapery</p>
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="p-t-3 nav-item" ><a href="user_profile.html" class="nav-link"> <i class="fa fa-fw fa-user"></i> My
+                                Profile </a>
+                            </li>
+                            <li ></li>
+                            <li class="nav-item"><a href="edit_user.html" class="nav-link"> <span><i class="fa fa-fw fa-gear"></i> Account Settings</span>
+                            </a></li>
+                            <li  class="dropdown-divider"></li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="lockscreen.html ">
+                                        <i class="fa fa-fw fa-lock"></i>
+                                        Lock
+                                    </a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="login.html ">
+                                        <i class="fa fa-fw fa-sign-out"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="wrapper row-offcanvas row-offcanvas-left">
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar-->
+        <section class="sidebar">
+            <div id="menu" role="navigation">
+                <div class="nav_profile">
+                    <div class="media profile-left">
+                        <a class="pull-left profile-thumb" href="#">
+                            <img src="img/authors/avatar1.jpg" class="rounded-circle mr-2" alt="User Image">
+                        </a>
+                        <div class="content-profile">
+                            <h4 class="media-heading">
+                                Nataliapery
+                            </h4>
+                            <ul class="icon-list list-inline">
+                                <li>
+                                    <a href="users.html">
+                                        <i class="fa fa-fw fa-user"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lockscreen.html">
+                                        <i class="fa fa-fw fa-lock"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="edit_user.html">
+                                        <i class="fa fa-fw fa-gear"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="fa fa-fw fa-sign-out"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">
+                            <i class="menu-icon fa fa-fw fa-home"></i>
+                            <span class="mm-text ">Dashboard V1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index2.html">
+                            <i class="menu-icon fa fa-fw fa-tachometer"></i>
+                            <span class="mm-text ">Dashboard V2</span>
+                        </a>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-check-square"></i>
+                            <span>Forms</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="form_elements.html">
+                                    <i class="fa fa-fw fa-fire"></i> Form Elements
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_editors.html">
+                                    <i class="fa fa-fw fa-file-text-o"></i> Form Editors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_validations.html">
+                                    <i class="fa fa-fw fa-warning"></i> Form Validations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_layouts.html">
+                                    <i class="fa fa-fw fa-fire"></i> Form Layouts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_wizards.html">
+                                    <i class="fa fa-fw fa-cog"></i> Form Wizards
+                                </a>
+                            </li>
+                            <li>
+                                <a href="complex_forms.html">
+                                    <i class="fa fa-fw fa-newspaper-o"></i> Complex Forms
+                                </a>
+                            </li>
+                            <li>
+                                <a href="complex_forms2.html">
+                                    <i class="fa fa-fw fa-newspaper-o"></i> Complex Forms 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="radio_checkboxes.html">
+                                    <i class="fa fa-fw fa-check-square-o"></i> Radio and Checkbox
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dropdowns.html">
+                                    <i class="fa fa-fw fa-chevron-circle-down"></i> Drop Downs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="datepicker.html">
+                                    <i class="fa fa-fw fa-calendar-o"></i> Date pickers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanceddate_pickers.html">
+                                    <i class="fa fa-fw fa-calendar"></i> Advanced Date pickers
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span>
+                                    UI Features
+                                </span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="general_components.html">
+                                    <i class="fa fa-fw fa-plug"></i> General Components
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pickers.html">
+                                    <i class="fa fa-fw fa-paint-brush"></i> Pickers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buttons.html">
+                                    <i class="fa fa-fw fa-delicious"></i> Buttons
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tabs_accordions.html">
+                                    <i class="fa fa-fw fa-copy"></i> Tabs &amp; Accordions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="fonts.html">
+                                    <i class="fa fa-fw fa-font"></i> Font Icons
+                                </a>
+                            </li>
+                            <li>
+                                <a href="grid_layout.html">
+                                    <i class="fa fa-fw fa-columns"></i> Grid Layout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanced_modals.html">
+                                    <i class="fa fa-fw fa-suitcase"></i> Advanced Modals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gridstack.html">
+                                    <i class="fa fa-fw fa-slack"></i> Grid Stack
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tags_input.html">
+                                    <i class="fa fa-fw fa-tag"></i> Tags Input
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nestable_list.html">
+                                    <i class="fa fa-fw fa-navicon"></i> Nestable List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sweet_alert.html">
+                                    <i class="fa fa-fw fa-bell"></i> Sweet Alert
+                                </a>
+                            </li>
+                            <li>
+                                <a href="toastr_notifications.html">
+                                    <i class="fa fa-fw fa-desktop"></i> Toastr Notifications
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <i class="fa fa-fw fa-flag"></i> Notifications
+                                </a>
+                            </li>
+                            <li>
+                                <a href="session_timeout.html">
+                                    <i class="fa fa-fw fa-rocket"></i> Session Timeout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="draggable_portlets.html">
+                                    <i class="fa fa-fw fa-random"></i> Draggable Portlets
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-briefcase"></i>
+                            <span>
+                                    UI Components
+                                </span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="timeline.html">
+                                    <i class="fa fa-fw fa-clock-o"></i> Timeline
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transitions.html">
+                                    <i class="fa fa-fw fa-star-half-empty"></i> Transitions
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown active">
+                        <a href="#"> <i class="menu-icon fa fa-table"></i>
+                            <span>DataTables</span>
+                            <span class="fa arrow">
+                                </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="simple_tables.html">
+                                    <i class="fa fa-fw fa-tasks"></i> Simple tables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="datatables.html">
+                                    <i class="fa fa-fw fa-database"></i> Data Tables
+                                </a>
+                            </li>
+                            <li class="active" id="active">
+                                <a href="advanced_datatables.html">
+                                    <i class="fa fa-fw fa-table"></i> Advanced Tables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="responsive_datatables.html">
+                                    <i class="fa fa-fw fa-table"></i> Responsive DataTables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bootstrap_tables.html">
+                                    <i class="fa fa-fw fa-table"></i> Bootstrap Tables
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#"> <i class="menu-icon fa fa-bar-chart-o"></i> <span>Charts</span> <span
+                                class="fa arrow"></span> </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="flot_charts.html">
+                                    <i class="fa fa-fw fa-area-chart"></i> Flot Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nvd3_charts.html">
+                                    <i class="fa fa-fw fa-line-chart"></i> NVD3 Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="circle_sliders.html">
+                                    <i class="fa fa-fw fa-sun-o"></i> Circle Sliders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chartjs_charts.html">
+                                    <i class="fa fa-fw fa-pie-chart"></i> Chartjs Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dimple_charts.html">
+                                    <i class="fa fa-fw fa-area-chart"></i> Dimple Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="amcharts.html">
+                                    <i class="fa fa-fw fa-line-chart"></i> Amcharts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chartist.html">
+                                    <i class="fa fa-fw fa-bar-chart"></i> Chartist Charts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-fw fa-calendar"></i>
+                            <span>Calendar</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="calendar.html">
+                                    <i class=" menu-icon fa fa-fw fa-calendar"></i>
+                                    <span>Calendar</span>
+                                    <small class="badge badge-success badge-pill float-right mt-1 text-white">7</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calendar2.html">
+                                    <i class=" menu-icon fa fa-fw fa-calendar-o"></i>
+                                    <span>Advanced Calendar</span>
+                                    <small class="badge badge-success badge-pill float-right mt-1 text-white">6</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-fw fa-photo"></i>
+                            <span>Gallery</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="masonry_gallery.html">
+                                    <i class="fa fa-fw fa-file-image-o"></i> Masonry Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multiplefile_upload.html">
+                                    <i class="fa fa-fw fa-cloud-upload"></i> Multiple File Upload
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dropify.html">
+                                    <i class="fa fa-fw fa-dropbox"></i> Dropify
+                                </a>
+                            </li>
+                            <li>
+                                <a href="image_hover.html">
+                                    <i class="fa fa-file-image-o"></i> Image Hover
+                                </a>
+                            </li>
+                            <li>
+                                <a href="image_filter.html">
+                                    <i class="fa fa-filter"></i> Image Filter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="image_magnifier.html">
+                                    <i class="fa  fa-search-plus"></i> Image Magnifier
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#"> <i class="menu-icon fa fa-fw fa-users"></i> <span>Users</span> <span
+                                class="fa arrow"></span> </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="users.html">
+                                    <i class="fa fa-list" aria-hidden="true"></i> Users List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="addnew_user.html">
+                                    <i class="fa fa-fw fa-user"></i> Add New User
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user_profile.html">
+                                    <i class="fa fa-fw fa-user-md"></i> View Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="deleted_users.html">
+                                    <i class="fa fa-fw fa-times"></i> Deleted Users
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-map-marker"></i>
+                            <span>Maps</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="google_maps.html">
+                                    <i class="fa fa-fw fa-globe"></i> Google Maps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vector_maps.html">
+                                    <i class="fa fa-fw fa-map-marker"></i> Vector Maps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanced_maps.html">
+                                    <i class="fa fa-fw fa-location-arrow"></i> Advanced Maps
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-files-o"></i>
+                            <span>Pages</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="lockscreen.html">
+                                    <i class="fa fa-fw fa-lock"></i> Lockscreen
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lockscreen2.html">
+                                    <i class="fa fa-fw fa-lock"></i> Lockscreen V2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="invoice.html">
+                                    <i class="fa fa-fw fa-newspaper-o"></i> Invoice
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blank.html">
+                                    <i class="fa fa-fw fa-file-o"></i> Blank
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-fw fa-sign-in"></i> Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login2.html">
+                                    <i class="fa fa-fw fa-space-shuttle"></i> Login V2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register.html">
+                                    <i class="fa fa-fw fa-sign-out"></i> Register
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register2.html">
+                                    <i class="fa fa-fw fa-trello"></i> Register V2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="404.html">
+                                    <i class="fa fa-fw fa-unlink"></i> 404 Error
+                                </a>
+                            </li>
+                            <li>
+                                <a href="500.html">
+                                    <i class="fa fa-fw fa-frown-o"></i> 500 Error
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-th"></i>
+                            <span>Layouts</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="menubarfold.html">
+                                    <i class="fa fa-fw fa-list-alt"></i> Menubar Fold
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_horizontal_menu.html">
+                                    <i class="fa fa-fw fa-bars"></i> Horizontal Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_footer.html">
+                                    <i class="fa fa-fw  fa-ellipsis-h"></i> Sticky Footer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boxed.html">
+                                    <i class="fa fa-fw fa-th-large"></i> Boxed Layout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_fixed_header.html">
+                                    <i class="fa fa-fw fa-th-list"></i> Fixed Header
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_boxed_fixed_header.html">
+                                    <i class="fa fa-fw fa-th"></i> Boxed &amp; Fixed Header
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_fixed.html">
+                                    <i class="fa fa-fw fa-indent"></i> Fixed Header &amp; Menu
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-sitemap"></i>
+                            <span>
+                                    Menu levels
+                                </span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sitemap"></i> Level 1
+                                    <span class="fa arrow"></span>
+                                </a>
+                                <ul class="sub-menu sub-submenu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu sub-submenu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 3
+                                                    <span class="fa arrow"></span>
+                                                </a>
+                                                <ul class="sub-menu sub-submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                            <span class="fa arrow"></span>
+                                                        </a>
+                                                        <ul class="sub-menu sub-submenu">
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-fw fa-sitemap"></i> Level 5
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-fw fa-sitemap"></i> Level 5
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-fw fa-sitemap"></i> Level 5
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sitemap"></i> Level 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sitemap"></i> Level 1
+                                    <span class="fa arrow"></span>
+                                </a>
+                                <ul class="sub-menu sub-submenu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- / .navigation -->
+            </div>
+            <!-- menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <aside class="right-side">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Advanced Tables
+            </h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item pt-1"><a href="index.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Data Tables</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Advanced Tables
+                </li>
+            </ol>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card border-primary filterable">
+                        <div class="card-header text-white bg-primary clearfix  ">
+                            <div class="card-title d-inline pull-left">
+                                <i class="fa fa-fw fa-align-justify"></i> <b>Want to export data?</b>
+                            </div>
+                            <div class="tools pull-right"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped" id="table1">
+                                    <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>User email</th>
+                                        <th>
+                                            Account Type
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Demetrius</td>
+                                        <td>Cole</td>
+                                        <td>Demetrius.Cole@yahoo.com</td>
+                                        <td>Credit Card Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sydnee</td>
+                                        <td>Beahan</td>
+                                        <td>Sydnee_Beahan41@gmail.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Susanna</td>
+                                        <td>Skiles</td>
+                                        <td>Susanna.Skiles@gmail.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dean</td>
+                                        <td>Okuneva</td>
+                                        <td>Dean.Okuneva@hotmail.com</td>
+                                        <td>Savings Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jameson</td>
+                                        <td>Hane</td>
+                                        <td>Jameson.Hane75@yahoo.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jamar</td>
+                                        <td>Mohr</td>
+                                        <td>Jamar80@hotmail.com</td>
+                                        <td>Savings Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jazlyn</td>
+                                        <td>Bergnaum</td>
+                                        <td>Jazlyn_Bergnaum11@yahoo.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eldridge</td>
+                                        <td>Maggio</td>
+                                        <td>Eldridge_Maggio@yahoo.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rubie</td>
+                                        <td>Kuhic</td>
+                                        <td>Rubie54@hotmail.com</td>
+                                        <td>Auto Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Karli</td>
+                                        <td>Grady</td>
+                                        <td>Karli20@gmail.com</td>
+                                        <td>Auto Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Claude</td>
+                                        <td>Hilll</td>
+                                        <td>Claude.Hilll@yahoo.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dameon</td>
+                                        <td>Streich</td>
+                                        <td>Dameon_Streich@gmail.com</td>
+                                        <td>Money Market Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jalen</td>
+                                        <td>Schimmel</td>
+                                        <td>Jalen3@hotmail.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fatima</td>
+                                        <td>Heidenreich</td>
+                                        <td>Fatima3@yahoo.com</td>
+                                        <td>Credit Card Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jaydon</td>
+                                        <td>Volkman</td>
+                                        <td>Jaydon_Volkman26@hotmail.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Santos</td>
+                                        <td>Tremblay</td>
+                                        <td>Santos.Tremblay@gmail.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emie</td>
+                                        <td>Ondricka</td>
+                                        <td>Emie_Ondricka@yahoo.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saige</td>
+                                        <td>Bergnaum</td>
+                                        <td>Saige39@yahoo.com</td>
+                                        <td>Credit Card Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brock</td>
+                                        <td>Crona</td>
+                                        <td>Brock26@yahoo.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Liana</td>
+                                        <td>Harvey</td>
+                                        <td>Liana.Harvey32@hotmail.com</td>
+                                        <td>Savings Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haylie</td>
+                                        <td>Stiedemann</td>
+                                        <td>Haylie.Stiedemann@yahoo.com</td>
+                                        <td>Savings Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hanna</td>
+                                        <td>Wuckert</td>
+                                        <td>Hanna44@gmail.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aron</td>
+                                        <td>Hintz</td>
+                                        <td>Aron.Hintz@hotmail.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eunice</td>
+                                        <td>Ankunding</td>
+                                        <td>Eunice.Ankunding72@yahoo.com</td>
+                                        <td>Savings Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mona</td>
+                                        <td>VonRueden</td>
+                                        <td>Mona.VonRueden@yahoo.com</td>
+                                        <td>Credit Card Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Celestino</td>
+                                        <td>Grant</td>
+                                        <td>Celestino.Grant@yahoo.com</td>
+                                        <td>Credit Card Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zelda</td>
+                                        <td>Wuckert</td>
+                                        <td>Zelda_Wuckert@yahoo.com</td>
+                                        <td>Auto Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elmo</td>
+                                        <td>Schaden</td>
+                                        <td>Elmo43@gmail.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Andres</td>
+                                        <td>Hintz</td>
+                                        <td>Andres.Hintz1@yahoo.com</td>
+                                        <td>Auto Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mandy</td>
+                                        <td>Senger</td>
+                                        <td>Mandy4@yahoo.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hayley</td>
+                                        <td>Veum</td>
+                                        <td>Hayley.Veum@hotmail.com</td>
+                                        <td>Investment Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wilmer</td>
+                                        <td>Hoppe</td>
+                                        <td>Wilmer_Hoppe@gmail.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lyric</td>
+                                        <td>Rau</td>
+                                        <td>Lyric_Rau39@gmail.com</td>
+                                        <td>Money Market Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mariela</td>
+                                        <td>Davis</td>
+                                        <td>Mariela_Davis43@hotmail.com</td>
+                                        <td>Checking Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estefania</td>
+                                        <td>Spencer</td>
+                                        <td>Estefania.Spencer@gmail.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dolores</td>
+                                        <td>Rau</td>
+                                        <td>Dolores_Rau@hotmail.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Norma</td>
+                                        <td>Bahringer</td>
+                                        <td>Norma34@hotmail.com</td>
+                                        <td>Personal Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Letitia</td>
+                                        <td>Parisian</td>
+                                        <td>Letitia96@gmail.com</td>
+                                        <td>Checking Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Earlene</td>
+                                        <td>Stracke</td>
+                                        <td>Earlene.Stracke64@hotmail.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lawson</td>
+                                        <td>Sanford</td>
+                                        <td>Lawson.Sanford@yahoo.com</td>
+                                        <td>Home Loan Account</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card border-success filterable" style="overflow:auto;">
+                        <div class="card-header text-white bg-success">
+                            <h3 class="card-title d-inline">
+                                <i class="fa fa-fw fa-columns"></i> Re-order Columns
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered" id="table2">
+                                    <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>User Name</th>
+                                        <th>
+                                            Company
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Keon</td>
+                                        <td>Kihn</td>
+                                        <td>Keon56</td>
+                                        <td>Kassulke and Sons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kasandra</td>
+                                        <td>Hermiston</td>
+                                        <td>Kasandra.Hermiston</td>
+                                        <td>Cruickshank LLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chris</td>
+                                        <td>Schuster</td>
+                                        <td>Chris.Schuster96</td>
+                                        <td>Kuhlman - Erdman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wilfredo</td>
+                                        <td>Breitenberg</td>
+                                        <td>Wilfredo_Breitenberg</td>
+                                        <td>Barrows - Gutkowski</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boris</td>
+                                        <td>Waters</td>
+                                        <td>Boris54</td>
+                                        <td>Lesch - Nader</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dina</td>
+                                        <td>Murray</td>
+                                        <td>Dina_Murray</td>
+                                        <td>Steuber Inc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lorna</td>
+                                        <td>Bernhard</td>
+                                        <td>Lorna23</td>
+                                        <td>Kertzmann - Tromp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nash</td>
+                                        <td>Schimmel</td>
+                                        <td>Nash_Schimmel78</td>
+                                        <td>Howe, Mraz and Funk</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Russ</td>
+                                        <td>Sawayn</td>
+                                        <td>Russ83</td>
+                                        <td>Will LLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geovany</td>
+                                        <td>Hermiston</td>
+                                        <td>Geovany.Hermiston89</td>
+                                        <td>McKenzie LLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ellis</td>
+                                        <td>Oberbrunner</td>
+                                        <td>Ellis.Oberbrunner</td>
+                                        <td>Orn, Hilpert and Douglas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arely</td>
+                                        <td>Turner</td>
+                                        <td>Arely79</td>
+                                        <td>McGlynn - Oberbrunner</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destiney</td>
+                                        <td>Rohan</td>
+                                        <td>Destiney.Rohan</td>
+                                        <td>Turner LLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brian</td>
+                                        <td>Koch</td>
+                                        <td>Brian.Koch</td>
+                                        <td>Streich, Spencer and Dickinson</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eldred</td>
+                                        <td>Schuppe</td>
+                                        <td>Eldred83</td>
+                                        <td>Cronin Group</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Caden</td>
+                                        <td>Kohler</td>
+                                        <td>Caden.Kohler0</td>
+                                        <td>Rippin and Sons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zora</td>
+                                        <td>Feest</td>
+                                        <td>Zora5</td>
+                                        <td>Kuphal - Kuhic</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shanon</td>
+                                        <td>Abernathy</td>
+                                        <td>Shanon.Abernathy72</td>
+                                        <td>Funk, Hickle and Larkin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kaylee</td>
+                                        <td>Roberts</td>
+                                        <td>Kaylee75</td>
+                                        <td>Christiansen - Rempel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Russell</td>
+                                        <td>Wuckert</td>
+                                        <td>Russell.Wuckert67</td>
+                                        <td>Nienow - Turcotte</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jarrell</td>
+                                        <td>Langworth</td>
+                                        <td>Jarrell72</td>
+                                        <td>Hahn LLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alanis</td>
+                                        <td>Hane</td>
+                                        <td>Alanis_Hane</td>
+                                        <td>Cole - Ankunding</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shyanne</td>
+                                        <td>Hagenes</td>
+                                        <td>Shyanne_Hagenes49</td>
+                                        <td>Eichmann, Cummings and Hegmann</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Humberto</td>
+                                        <td>Terry</td>
+                                        <td>Humberto_Terry</td>
+                                        <td>Wintheiser and Sons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lucy</td>
+                                        <td>Pagac</td>
+                                        <td>Lucy.Pagac</td>
+                                        <td>Wunsch, Hammes and Bartell</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Royce</td>
+                                        <td>Wilkinson</td>
+                                        <td>Royce5</td>
+                                        <td>Botsford - Kilback</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jordane</td>
+                                        <td>Kris</td>
+                                        <td>Jordane_Kris0</td>
+                                        <td>Ritchie, Dooley and Hickle</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brandi</td>
+                                        <td>Marks</td>
+                                        <td>Brandi_Marks</td>
+                                        <td>Hayes Group</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dylan</td>
+                                        <td>Gleichner</td>
+                                        <td>Dylan_Gleichner</td>
+                                        <td>Ankunding, Pouros and Trantow</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Asia</td>
+                                        <td>McGlynn</td>
+                                        <td>Asia67</td>
+                                        <td>Jakubowski and Sons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiona</td>
+                                        <td>Hirthe</td>
+                                        <td>Fiona_Hirthe</td>
+                                        <td>Littel, Koepp and McLaughlin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zena</td>
+                                        <td>Shields</td>
+                                        <td>Zena.Shields80</td>
+                                        <td>Beatty - O'Kon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alayna</td>
+                                        <td>Stamm</td>
+                                        <td>Alayna_Stamm41</td>
+                                        <td>Beier LLC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kari</td>
+                                        <td>Pollich</td>
+                                        <td>Kari.Pollich</td>
+                                        <td>Corkery - Parisian</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lucas</td>
+                                        <td>Sipes</td>
+                                        <td>Lucas.Sipes3</td>
+                                        <td>Berge, Gibson and Ferry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Louisa</td>
+                                        <td>Robel</td>
+                                        <td>Louisa.Robel7</td>
+                                        <td>McLaughlin, Sipes and Simonis</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hettie</td>
+                                        <td>Von</td>
+                                        <td>Hettie97</td>
+                                        <td>Bartoletti and Sons</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Janae</td>
+                                        <td>Carter</td>
+                                        <td>Janae.Carter</td>
+                                        <td>Okuneva, Hodkiewicz and Nicolas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Selmer</td>
+                                        <td>Cummerata</td>
+                                        <td>Selmer.Cummerata</td>
+                                        <td>Mayer - Hagenes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elza</td>
+                                        <td>O'Reilly</td>
+                                        <td>Elza.OReilly</td>
+                                        <td>Quigley, Lowe and Ritchie</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card border-success filterable">
+                        <div class="card-header text-white clearfix bg-success">
+                            <h3 class="card-title d-inline pull-left m-t-6">
+                                <i class="fa fa-fw fa-list-alt"></i> Add / Remove rows
+                            </h3>
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-primary btn-sm" id="addButton">Add row</button>
+                                <button type="button" class="btn btn-danger btn-sm" id="delButton">Delete row</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table" id="table3">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>User email</th>
+                                        <th>
+                                            Contact
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Eveline</td>
+                                        <td>Trantow</td>
+                                        <td>Eveline_Trantow@gmail.com</td>
+                                        <td>457-997-1592</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Glen</td>
+                                        <td>Jakubowski</td>
+                                        <td>Glen76@hotmail.com</td>
+                                        <td>771-231-5487</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Elaina</td>
+                                        <td>Prohaska</td>
+                                        <td>Elaina.Prohaska14@hotmail.com</td>
+                                        <td>976-696-7144</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Dwight</td>
+                                        <td>Mohr</td>
+                                        <td>Dwight_Mohr@yahoo.com</td>
+                                        <td>031-955-0746</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Kim</td>
+                                        <td>Cruickshank</td>
+                                        <td>Kim_Cruickshank@yahoo.com</td>
+                                        <td>937-691-5468</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Kameron</td>
+                                        <td>Mante</td>
+                                        <td>Kameron77@gmail.com</td>
+                                        <td>727-927-3894</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Osborne</td>
+                                        <td>Kutch</td>
+                                        <td>Osborne.Kutch24@yahoo.com</td>
+                                        <td>818-219-1436</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Magdalena</td>
+                                        <td>Bogan</td>
+                                        <td>Magdalena.Bogan@gmail.com</td>
+                                        <td>357-438-6912</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Rhiannon</td>
+                                        <td>Rice</td>
+                                        <td>Rhiannon_Rice@yahoo.com</td>
+                                        <td>784-055-2906</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Lucile</td>
+                                        <td>Keeling</td>
+                                        <td>Lucile58@hotmail.com</td>
+                                        <td>242-185-2271</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Eli</td>
+                                        <td>Kovacek</td>
+                                        <td>Eli.Kovacek@gmail.com</td>
+                                        <td>767-230-6149</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Max</td>
+                                        <td>Padberg</td>
+                                        <td>Max_Padberg@yahoo.com</td>
+                                        <td>609-627-4084</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Norval</td>
+                                        <td>Rath</td>
+                                        <td>Norval74@gmail.com</td>
+                                        <td>248-631-0145</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Grady</td>
+                                        <td>Lesch</td>
+                                        <td>Grady.Lesch43@hotmail.com</td>
+                                        <td>579-377-4526</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Ernie</td>
+                                        <td>Kub</td>
+                                        <td>Ernie32@gmail.com</td>
+                                        <td>687-425-8040</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Helen</td>
+                                        <td>Durgan</td>
+                                        <td>Helen43@yahoo.com</td>
+                                        <td>762-249-0859</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Peggie</td>
+                                        <td>Grady</td>
+                                        <td>Peggie27@hotmail.com</td>
+                                        <td>360-045-8748</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Jordy</td>
+                                        <td>Mayert</td>
+                                        <td>Jordy43@yahoo.com</td>
+                                        <td>496-621-5551</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>Adrienne</td>
+                                        <td>Reilly</td>
+                                        <td>Adrienne46@yahoo.com</td>
+                                        <td>697-173-8927</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Karley</td>
+                                        <td>Homenick</td>
+                                        <td>Karley_Homenick60@hotmail.com</td>
+                                        <td>930-799-2042</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Darion</td>
+                                        <td>Christiansen</td>
+                                        <td>Darion.Christiansen86@yahoo.com</td>
+                                        <td>899-822-5178</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Luz</td>
+                                        <td>Kilback</td>
+                                        <td>Luz.Kilback@gmail.com</td>
+                                        <td>784-712-6332</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>Lindsey</td>
+                                        <td>Tremblay</td>
+                                        <td>Lindsey_Tremblay@yahoo.com</td>
+                                        <td>783-584-2841</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Colt</td>
+                                        <td>MacGyver</td>
+                                        <td>Colt73@yahoo.com</td>
+                                        <td>800-711-3591</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Natasha</td>
+                                        <td>Schamberger</td>
+                                        <td>Natasha.Schamberger68@gmail.com</td>
+                                        <td>588-666-7244</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Earlene</td>
+                                        <td>Windler</td>
+                                        <td>Earlene87@gmail.com</td>
+                                        <td>579-545-2605</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>Keyshawn</td>
+                                        <td>Wiegand</td>
+                                        <td>Keyshawn_Wiegand33@yahoo.com</td>
+                                        <td>013-558-0632</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>Priscilla</td>
+                                        <td>Crona</td>
+                                        <td>Priscilla.Crona@hotmail.com</td>
+                                        <td>699-185-0198</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Clarabelle</td>
+                                        <td>Legros</td>
+                                        <td>Clarabelle.Legros@gmail.com</td>
+                                        <td>229-547-4531</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Amaya</td>
+                                        <td>Murazik</td>
+                                        <td>Amaya_Murazik38@gmail.com</td>
+                                        <td>616-668-8398</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td>Marcelle</td>
+                                        <td>Torphy</td>
+                                        <td>Marcelle17@gmail.com</td>
+                                        <td>381-767-6748</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>Norberto</td>
+                                        <td>Huels</td>
+                                        <td>Norberto.Huels75@gmail.com</td>
+                                        <td>505-191-3299</td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td>Cordie</td>
+                                        <td>Metz</td>
+                                        <td>Cordie_Metz@yahoo.com</td>
+                                        <td>383-212-8444</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>Dennis</td>
+                                        <td>Grant</td>
+                                        <td>Dennis_Grant@hotmail.com</td>
+                                        <td>757-860-2177</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>Laurine</td>
+                                        <td>Wiza</td>
+                                        <td>Laurine.Wiza@hotmail.com</td>
+                                        <td>844-454-0123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>Isidro</td>
+                                        <td>Howe</td>
+                                        <td>Isidro.Howe28@hotmail.com</td>
+                                        <td>570-437-2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>Montana</td>
+                                        <td>Bauch</td>
+                                        <td>Montana30@gmail.com</td>
+                                        <td>651-720-7969</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>Montana</td>
+                                        <td>Schmitt</td>
+                                        <td>Montana_Schmitt@yahoo.com</td>
+                                        <td>421-495-4064</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>Celestino</td>
+                                        <td>Dach</td>
+                                        <td>Celestino.Dach@gmail.com</td>
+                                        <td>718-592-7075</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>Payton</td>
+                                        <td>Wuckert</td>
+                                        <td>Payton23@yahoo.com</td>
+                                        <td>458-553-7848</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Basic Table Ends Here-->
+            <!--delete modal starts here-->
+            <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="Heading"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title custom_align" id="Heading">
+                                Delete this entry
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-warning">
+                                <span class="fa fa-exclamation-traingle"></span> Are you sure you want to delete
+                                this Record?
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button" class="btn btn-warning">
+                                <span class="fa fa-check"></span> Yes
+                            </button>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">
+                                <span class="fa fa-close"></span> No
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /.modal ends here -->
+            <div id="right">
+                <div id="slim2">
+                    <div class="rightsidebar-right">
+                        <div class="rightsidebar-right-content">
+                            <h5 class="rightsidebar-right-heading rightsidebar-right-heading-first text-uppercase text-xs">
+                                <i class="menu-icon  fa fa-fw fa-paw"></i> Contacts
+                            </h5>
+                            <ul class="list-unstyled margin-none">
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar1.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-primary"></i> Alanis
+                                    </a>
+                                </li>
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-primary"></i> Rolando
+                                    </a>
+                                </li>
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar2.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-primary"></i> Marlee
+                                    </a>
+                                </li>
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar3.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-warning"></i> Marlee
+                                    </a>
+                                </li>
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar4.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-danger"></i> Kamryn
+                                    </a>
+                                </li>
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar5.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-muted"></i> Cielo
+                                    </a>
+                                </li>
+                                <li class="rightsidebar-contact-wrapper">
+                                    <a class="rightsidebar-contact" href="#">
+                                        <img src="img/authors/avatar7.jpg" height="20" width="20"
+                                             class="rounded-circle pull-right" alt="avatar-image">
+                                        <i class="fa fa-circle text-xs text-muted"></i> Charlene
+                                    </a>
+                                </li>
+                            </ul>
+                            <h5 class="rightsidebar-right-heading text-uppercase text-xs">
+                                <i class="fa fa-fw fa-tasks"></i> Tasks
+                            </h5>
+                            <ul class="list-unstyled m-t-25">
+                                <li>
+                                    <div>
+                                        <p>
+                                            <strong>Task 1</strong>
+                                            <small class="pull-right text-muted">
+                                                40% Complete
+                                            </small>
+                                        </p>
+                                        <div class="progress progress-xs progress-striped active">
+                                            <div class="progress-bar bg-success" role="progressbar"
+                                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 40%">
+                                                    <span class="sr-only">
+                                                        40% Complete (success)
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>
+                                            <strong>Task 2</strong>
+                                            <small class="pull-right text-muted">
+                                                20% Complete
+                                            </small>
+                                        </p>
+                                        <div class="progress progress-xs progress-striped active">
+                                            <div class="progress-bar bg-info" role="progressbar"
+                                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 20%">
+                                                    <span class="sr-only">
+                                                        20% Complete
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>
+                                            <strong>Task 3</strong>
+                                            <small class="pull-right text-muted">
+                                                60% Complete
+                                            </small>
+                                        </p>
+                                        <div class="progress progress-xs progress-striped active">
+                                            <div class="progress-bar bg-warning" role="progressbar"
+                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 60%">
+                                                    <span class="sr-only">
+                                                        60% Complete (warning)
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p>
+                                            <strong>Task 4</strong>
+                                            <small class="pull-right text-muted">
+                                                80% Complete
+                                            </small>
+                                        </p>
+                                        <div class="progress progress-xs progress-striped active">
+                                            <div class="progress-bar bg-danger" role="progressbar"
+                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 80%">
+                                                    <span class="sr-only">
+                                                        80% Complete (danger)
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h5 class="rightsidebar-right-heading text-uppercase text-xs">
+                                <i class="fa fa-fw fa-group"></i> Recent Activities
+                            </h5>
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-comment fa-fw text-primary"></i> New Comment
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-twitter fa-fw text-success"></i> 3 New Followers
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-envelope fa-fw text-info"></i> Message Sent
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-tasks fa-fw text-warning"></i> New Task
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-upload fa-fw text-danger"></i> Server Rebooted
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-warning fa-fw text-primary"></i> Server Not Responding
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-shopping-cart fa-fw text-success"></i> New Order Placed
+                                        </a>
+                                    </li>
+                                    <li class="rightsidebar-notification">
+                                        <a href="#">
+                                            <i class="fa fa-money fa-fw text-info"></i> Payment Received
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </aside>
+
+</div>
+<!-- wrapper-->
+<!-- global js -->
+<script src="js/app.js" type="text/javascript"></script>
+<!-- end of global js -->
+<!-- begining of page level js -->
+<script type="text/javascript" src="vendors/datatables/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/dataTables.bootstrap4.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/dataTables.rowReorder.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/dataTables.scroller.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/dataTables.colReorder.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/buttons.colVis.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/buttons.html5.js"></script>
+<script type="text/javascript" src="vendors/datatables/js/buttons.print.js"></script>
+<script src="js/custom_js/advanced_datatables.js" type="text/javascript"></script>
+<!-- end of page level js -->
+</body>
+
+</html>

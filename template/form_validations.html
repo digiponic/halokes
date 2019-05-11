@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validations | Core + Admin Template</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- global css -->
+    <link type="text/css" href="css/app.css" rel="stylesheet"/>
+    <!-- end of global css -->
+    <!--page level css -->
+    <link href="vendors/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
+    <link href="vendors/iCheck/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <link rel="stylesheet" href="css/custom_css/form2.css"/>
+    <link rel="stylesheet" href="css/custom_css/form3.css"/>
+    <!--end of page level css-->
+</head>
+
+<body class="skin-coreplus">
+<div class="preloader">
+    <div class="loader_img"><img src="img/loader.gif" alt="loading..." height="64" width="64"></div>
+</div>
+<!-- header logo: style can be found in header-->
+<header class="header">
+    <nav class="navbar navbar-expand-md navbar-static-top">
+        <a href="index " class="logo navbar-brand">
+            <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            <img src="img/logo.png" alt="logo"/>
+        </a>
+
+        <!-- Header Navbar: style can be found in header-->
+        <!-- Sidebar toggle button-->
+        <!-- Sidebar toggle button-->
+        <div>
+            <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button"> <i
+                    class="fa fa-fw fa-bars"></i>
+            </a>
+        </div>
+
+
+        <div class="navbar-collapse " id="navbarNav">
+            <div class="navbar-right ml-auto">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-item dropdown messages-menu">
+                        <a href="#" class="nav-link dropdown-toggle"> <i
+                                class="fa fa-fw fa-envelope-o black"></i>
+                            <span class="label bg-success">2</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages table-striped">
+                            <li class="dropdown-title">New Messages</li>
+                            <li class="msg-set message striped-col">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar7.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body"><strong>Ernest Kerry</strong>
+                                        <br>
+                                        Can we Meet?
+                                        <br>
+                                        <small>Just Now</small>
+                                        <span class="label bg-success label-mini msg-lable">New</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="msg-set message">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar6.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body"><strong>John</strong>
+                                        <br>
+                                        Dont forgot to call...
+                                        <br>
+                                        <small>5 minutes ago</small>
+                                        <span class="label bg-success label-mini msg-lable">New</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="msg-set message striped-col">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar5.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>Wilton Zeph</strong>
+                                        <br>
+                                        If there is anything else &hellip;
+                                        <br>
+                                        <small>14/10/2014 1:31 pm</small>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="msg-set message">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar1.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Jenny Kerry</strong>
+                                        <br>
+                                        Let me know when you free
+                                        <br>
+                                        <small>5 days ago</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="msg-set message striped-col">
+                                <a href="" class="">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Tony</strong>
+                                        <br>
+                                        Let me know when you free
+                                        <br>
+                                        <small>5 days ago</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer"><a href="#">View All messages</a></li>
+                        </ul>
+
+                    </li>
+                    <!--tasks-->
+                    <li class="nav-item dropdown tasks-menu d-none d-sm-block">
+                        <a href="#" class=" nav-link dropdown-toggle">
+                            <i class="fa fa-fw fa-edit black"></i>
+                            <span class="label bg-primary">4</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li class="dropdown-title ">You Have 4 Tasks</li>
+                            <li class="message striped-col">
+                                <a href="" class=" ">
+                                    Design some buttons
+                                    <small class="pull-right">20%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-primary" style="width: 20%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class="">
+                                    Create a nice theme
+                                    <small class="pull-right">40%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-success" style="width: 40%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">40% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message striped-col">
+                                <a href="" class="">
+                                    Some task I need to do
+                                    <small class="pull-right">60%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-danger" style="width: 60%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">60% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class="">
+                                    Make beautiful transitions
+                                    <small class="pull-right">80%</small>
+                                    <div class="message-body">
+                                        <div class="progress progress-xs progress_task">
+                                            <div class="progress-bar bg-warning" style="width: 80%"
+                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                 aria-valuemax="100">
+                                                <span class="sr-only">80% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer"><a href="#"> View All Tasks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown_message">
+                        <a href="#" class="nav-link dropdown-toggle toggle-right">
+                            <i class="fa fa-fw fa-comments-o black"></i>
+                            <span class="label bg-danger">9</span>
+                        </a>
+                    </li>
+                    <!-- Notifications: style can be found in dropdown-->
+                    <li class="nav-item dropdown notifications-menu">
+                        <a href="#" class="nav-link dropdown-toggle" >
+                            <i class="fa fa-fw fa-bell-o black"></i>
+                            <span class="label bg-warning">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li class="dropdown-title">You have 8 notifications</li>
+
+                            <li class="message striped-col">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar3.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>John Doe</strong>
+                                        <br>
+                                        5 members joined today
+                                        <br>
+                                        <span class="noti-date">Just now</span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Tony</strong>
+                                        <br>
+                                        likes a photo of you
+                                        <br>
+                                        <span class="noti-date">5 min</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message striped-col">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar6.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>John</strong>
+                                        <br>
+                                        Dont forgot to call...
+                                        <br>
+                                        <span class="noti-date">11 min</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message">
+                                <a href="" class=" icon-not">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar1.jpg"
+                                         alt="avatar-image">
+                                    <div class="message-body">
+                                        <strong>Jenny Kerry</strong>
+                                        <br>
+                                        Very long description here...
+                                        <br>
+                                        <span class="noti-date">1 Hour</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="message striped-col">
+                                <a href="" class=" icon-not ">
+                                    <img class="message-image rounded-circle" src="img/authors/avatar7.jpg"
+                                         alt="avatar-image">
+
+                                    <div class="message-body">
+                                        <strong>Ernest Kerry</strong>
+                                        <br>
+                                        2 members joined today
+                                        <br>
+                                        <span class="noti-date">3 Days</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer"><a href="#"> View All Notifications</a></li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown-->
+                    <li class="nav-item dropdown user user-menu">
+                        <a href="#" class="nav-link dropdown-toggle padding-user pt-3">
+                            <img src="img/authors/avatar1.jpg" width="35"
+                                 class="rounded-circle img-fluid pull-left"
+                                 height="35" alt="User Image">
+                            <div class="riot">
+                                <div>
+                                    Natali
+                                    <span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="img/authors/avatar1.jpg" class="rounded-circle" alt="User Image">
+                                <p> Nataliapery</p>
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="p-t-3 nav-item" ><a href="user_profile.html" class="nav-link"> <i class="fa fa-fw fa-user"></i> My
+                                Profile </a>
+                            </li>
+                            <li ></li>
+                            <li class="nav-item"><a href="edit_user.html" class="nav-link"> <span><i class="fa fa-fw fa-gear"></i> Account Settings</span>
+                            </a></li>
+                            <li  class="dropdown-divider"></li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="lockscreen.html ">
+                                        <i class="fa fa-fw fa-lock"></i>
+                                        Lock
+                                    </a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="login.html ">
+                                        <i class="fa fa-fw fa-sign-out"></i>
+                                        Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="wrapper row-offcanvas row-offcanvas-left">
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="left-side sidebar-offcanvas">
+        <!-- sidebar: style can be found in sidebar-->
+        <section class="sidebar">
+            <div id="menu" role="navigation">
+                <div class="nav_profile">
+                    <div class="media profile-left">
+                        <a class="pull-left profile-thumb" href="#">
+                            <img src="img/authors/avatar1.jpg" class="rounded-circle mr-2" alt="User Image">
+                        </a>
+                        <div class="content-profile">
+                            <h4 class="media-heading">
+                                Nataliapery
+                            </h4>
+                            <ul class="icon-list list-inline">
+                                <li>
+                                    <a href="users.html">
+                                        <i class="fa fa-fw fa-user"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="lockscreen.html">
+                                        <i class="fa fa-fw fa-lock"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="edit_user.html">
+                                        <i class="fa fa-fw fa-gear"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="fa fa-fw fa-sign-out"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">
+                            <i class="menu-icon fa fa-fw fa-home"></i>
+                            <span class="mm-text ">Dashboard V1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index2.html">
+                            <i class="menu-icon fa fa-fw fa-tachometer"></i>
+                            <span class="mm-text ">Dashboard V2</span>
+                        </a>
+                    </li>
+                    <li class="menu-dropdown active">
+                        <a href="#">
+                            <i class="menu-icon fa fa-check-square"></i>
+                            <span>Forms</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="form_elements.html">
+                                    <i class="fa fa-fw fa-fire"></i> Form Elements
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_editors.html">
+                                    <i class="fa fa-fw fa-file-text-o"></i> Form Editors
+                                </a>
+                            </li>
+                            <li class="active" id="active">
+                                <a href="form_validations.html">
+                                    <i class="fa fa-fw fa-warning"></i> Form Validations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_layouts.html">
+                                    <i class="fa fa-fw fa-fire"></i> Form Layouts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_wizards.html">
+                                    <i class="fa fa-fw fa-cog"></i> Form Wizards
+                                </a>
+                            </li>
+                            <li>
+                                <a href="complex_forms.html">
+                                    <i class="fa fa-fw fa-newspaper-o"></i> Complex Forms
+                                </a>
+                            </li>
+                            <li>
+                                <a href="complex_forms2.html">
+                                    <i class="fa fa-fw fa-newspaper-o"></i> Complex Forms 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="radio_checkboxes.html">
+                                    <i class="fa fa-fw fa-check-square-o"></i> Radio and Checkbox
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dropdowns.html">
+                                    <i class="fa fa-fw fa-chevron-circle-down"></i> Drop Downs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="datepicker.html">
+                                    <i class="fa fa-fw fa-calendar-o"></i> Date pickers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanceddate_pickers.html">
+                                    <i class="fa fa-fw fa-calendar"></i> Advanced Date pickers
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span>
+                                    UI Features
+                                </span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="general_components.html">
+                                    <i class="fa fa-fw fa-plug"></i> General Components
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pickers.html">
+                                    <i class="fa fa-fw fa-paint-brush"></i> Pickers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buttons.html">
+                                    <i class="fa fa-fw fa-delicious"></i> Buttons
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tabs_accordions.html">
+                                    <i class="fa fa-fw fa-copy"></i> Tabs &amp; Accordions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="fonts.html">
+                                    <i class="fa fa-fw fa-font"></i> Font Icons
+                                </a>
+                            </li>
+                            <li>
+                                <a href="grid_layout.html">
+                                    <i class="fa fa-fw fa-columns"></i> Grid Layout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanced_modals.html">
+                                    <i class="fa fa-fw fa-suitcase"></i> Advanced Modals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="gridstack.html">
+                                    <i class="fa fa-fw fa-slack"></i> Grid Stack
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tags_input.html">
+                                    <i class="fa fa-fw fa-tag"></i> Tags Input
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nestable_list.html">
+                                    <i class="fa fa-fw fa-navicon"></i> Nestable List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sweet_alert.html">
+                                    <i class="fa fa-fw fa-bell"></i> Sweet Alert
+                                </a>
+                            </li>
+                            <li>
+                                <a href="toastr_notifications.html">
+                                    <i class="fa fa-fw fa-desktop"></i> Toastr Notifications
+                                </a>
+                            </li>
+                            <li>
+                                <a href="notifications.html">
+                                    <i class="fa fa-fw fa-flag"></i> Notifications
+                                </a>
+                            </li>
+                            <li>
+                                <a href="session_timeout.html">
+                                    <i class="fa fa-fw fa-rocket"></i> Session Timeout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="draggable_portlets.html">
+                                    <i class="fa fa-fw fa-random"></i> Draggable Portlets
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-briefcase"></i>
+                            <span>
+                                    UI Components
+                                </span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="timeline.html">
+                                    <i class="fa fa-fw fa-clock-o"></i> Timeline
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transitions.html">
+                                    <i class="fa fa-fw fa-star-half-empty"></i> Transitions
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#"> <i class="menu-icon fa fa-table"></i>
+                            <span>DataTables</span>
+                            <span class="fa arrow">
+                                </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="simple_tables.html">
+                                    <i class="fa fa-fw fa-tasks"></i> Simple tables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="datatables.html">
+                                    <i class="fa fa-fw fa-database"></i> Data Tables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanced_datatables.html">
+                                    <i class="fa fa-fw fa-table"></i> Advanced Tables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="responsive_datatables.html">
+                                    <i class="fa fa-fw fa-table"></i> Responsive DataTables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bootstrap_tables.html">
+                                    <i class="fa fa-fw fa-table"></i> Bootstrap Tables
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#"> <i class="menu-icon fa fa-bar-chart-o"></i> <span>Charts</span> <span
+                                class="fa arrow"></span> </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="flot_charts.html">
+                                    <i class="fa fa-fw fa-area-chart"></i> Flot Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nvd3_charts.html">
+                                    <i class="fa fa-fw fa-line-chart"></i> NVD3 Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="circle_sliders.html">
+                                    <i class="fa fa-fw fa-sun-o"></i> Circle Sliders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chartjs_charts.html">
+                                    <i class="fa fa-fw fa-pie-chart"></i> Chartjs Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dimple_charts.html">
+                                    <i class="fa fa-fw fa-area-chart"></i> Dimple Charts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="amcharts.html">
+                                    <i class="fa fa-fw fa-line-chart"></i> Amcharts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chartist.html">
+                                    <i class="fa fa-fw fa-bar-chart"></i> Chartist Charts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-fw fa-calendar"></i>
+                            <span>Calendar</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="calendar.html">
+                                    <i class=" menu-icon fa fa-fw fa-calendar"></i>
+                                    <span>Calendar</span>
+                                    <small class="badge badge-success badge-pill float-right text-white">7</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calendar2.html">
+                                    <i class=" menu-icon fa fa-fw fa-calendar-o"></i>
+                                    <span>Advanced Calendar</span>
+                                    <small class="badge badge-success badge-pill float-right text-white">6</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-fw fa-photo"></i>
+                            <span>Gallery</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="masonry_gallery.html">
+                                    <i class="fa fa-fw fa-file-image-o"></i> Masonry Gallery
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multiplefile_upload.html">
+                                    <i class="fa fa-fw fa-cloud-upload"></i> Multiple File Upload
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dropify.html">
+                                    <i class="fa fa-fw fa-dropbox"></i> Dropify
+                                </a>
+                            </li>
+                            <li>
+                                <a href="image_hover.html">
+                                    <i class="fa fa-file-image-o"></i> Image Hover
+                                </a>
+                            </li>
+                            <li>
+                                <a href="image_filter.html">
+                                    <i class="fa fa-filter"></i> Image Filter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="image_magnifier.html">
+                                    <i class="fa  fa-search-plus"></i> Image Magnifier
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-fw fa-users"></i>
+                            <span>Users</span> <span
+                                class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="users.html">
+                                    <i class="fa fa-list" aria-hidden="true"></i> Users List
+                                </a>
+                            </li>
+                            <li>
+                                <a href="addnew_user.html">
+                                    <i class="fa fa-fw fa-user"></i> Add New User
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user_profile.html">
+                                    <i class="fa fa-fw fa-user-md"></i> View Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="deleted_users.html">
+                                    <i class="fa fa-fw fa-times"></i> Deleted Users
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-map-marker"></i>
+                            <span>Maps</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="google_maps.html">
+                                    <i class="fa fa-fw fa-globe"></i> Google Maps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="vector_maps.html">
+                                    <i class="fa fa-fw fa-map-marker"></i> Vector Maps
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advanced_maps.html">
+                                    <i class="fa fa-fw fa-location-arrow"></i> Advanced Maps
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-files-o"></i>
+                            <span>Pages</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="lockscreen.html">
+                                    <i class="fa fa-fw fa-lock"></i> Lockscreen
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lockscreen2.html">
+                                    <i class="fa fa-fw fa-lock"></i> Lockscreen V2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="invoice.html">
+                                    <i class="fa fa-fw fa-newspaper-o"></i> Invoice
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blank.html">
+                                    <i class="fa fa-fw fa-file-o"></i> Blank
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-fw fa-sign-in"></i> Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login2.html">
+                                    <i class="fa fa-fw fa-space-shuttle"></i> Login V2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register.html">
+                                    <i class="fa fa-fw fa-sign-out"></i> Register
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register2.html">
+                                    <i class="fa fa-fw fa-trello"></i> Register V2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="404.html">
+                                    <i class="fa fa-fw fa-unlink"></i> 404 Error
+                                </a>
+                            </li>
+                            <li>
+                                <a href="500.html">
+                                    <i class="fa fa-fw fa-frown-o"></i> 500 Error
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-th"></i>
+                            <span>Layouts</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="menubarfold.html">
+                                    <i class="fa fa-fw fa-list-alt"></i> Menubar Fold
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_horizontal_menu.html">
+                                    <i class="fa fa-fw fa-bars"></i> Horizontal Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_footer.html">
+                                    <i class="fa fa-fw  fa-ellipsis-h"></i> Sticky Footer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boxed.html">
+                                    <i class="fa fa-fw fa-th-large"></i> Boxed Layout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_fixed_header.html">
+                                    <i class="fa fa-fw fa-th-list"></i> Fixed Header
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_boxed_fixed_header.html">
+                                    <i class="fa fa-fw fa-th"></i> Boxed &amp; Fixed Header
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout_fixed.html">
+                                    <i class="fa fa-fw fa-indent"></i> Fixed Header &amp; Menu
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                            <i class="menu-icon fa fa-sitemap"></i>
+                            <span>
+                                    Menu levels
+                                </span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sitemap"></i> Level 1
+                                    <span class="fa arrow"></span>
+                                </a>
+                                <ul class="sub-menu sub-submenu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu sub-submenu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 3
+                                                    <span class="fa arrow"></span>
+                                                </a>
+                                                <ul class="sub-menu sub-submenu">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                            <span class="fa arrow"></span>
+                                                        </a>
+                                                        <ul class="sub-menu sub-submenu">
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-fw fa-sitemap"></i> Level 5
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-fw fa-sitemap"></i> Level 5
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class="fa fa-fw fa-sitemap"></i> Level 5
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-fw fa-sitemap"></i> Level 4
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sitemap"></i> Level 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-fw fa-sitemap"></i> Level 1
+                                    <span class="fa arrow"></span>
+                                </a>
+                                <ul class="sub-menu sub-submenu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-fw fa-sitemap"></i> Level 2
+                                            <span class="fa arrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- / .navigation -->
+            </div>
+            <!-- menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <aside class="right-side">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <!--section starts-->
+            <h1>
+                Form Validations
+            </h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item pt-1"><a href="index.html"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Forms</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Form Validations
+                </li>
+            </ol>
+        </section>
+        <!--section ends-->
+        <section class="content">
+            <!--main content-->
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title d-inline ">
+                                <i class="fa fa-fw fa-star-half-empty"></i> Basic Form Validation
+                            </h3>
+                            <span class="pull-right">
+                                    <i class="fa fa-fw fa-chevron-up clickable"></i>
+                                    <i class="fa fa-fw fa-times removepanel clickable"></i>
+                                </span>
+                        </div>
+                        <div class="card-body">
+                            <form id="form-validation" action="#"
+                                  class="">
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="val-username">
+                                        Username
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="val-username" name="firstName" class="form-control"
+                                               placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="email">
+                                        Email
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email" name="email" class="form-control"
+                                               placeholder="Enter your valid email">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="password">
+                                        Password
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="password" id="password" name="password" class="form-control"
+                                               placeholder="Enter your password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="confirmpassword">
+                                        Confirm Password
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="password" id="confirmpassword" name="confirmpassword"
+                                               class="form-control" placeholder="Confirm password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="message">
+                                        Message
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <textarea id="message" name="message" rows="7"
+                                                  class="form-control resize_vertical"
+                                                  placeholder="Enter your message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="skill">
+                                        Best Skill
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <select id="skill" name="skill" class="form-control">
+                                            <option value="">
+                                                Please select
+                                            </option>
+                                            <option value="html">HTML</option>
+                                            <option value="css">CSS</option>
+                                            <option value="javascript">Javascript</option>
+                                            <option value="php">PHP</option>
+                                            <option value="mysql">MySQL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="url">
+                                        Website
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="url" name="url" class="form-control"
+                                               placeholder="http://example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label" for="number">
+                                        Phone Number
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="number" name="number" class="form-control"
+                                               placeholder="Enter your phone number">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-4 col-form-label">Gender
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <label>
+                                                <input class="custom_radio" type="radio" name="gender" value="male"/>
+                                                Male
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input class="custom_radio" type="radio" name="gender" value="female"/>
+                                                Female
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input class="custom_radio" type="radio" name="gender" value="other"/>
+                                                Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-8 offset-md-4">
+                                        <label class="padding7 col-form-label d-block" for="terms">
+                                            <input type="checkbox" class="custom_icheck" id="terms" name="terms"
+                                                   value="1">&nbsp;&nbsp;I agree to
+                                            <a href="#modal-terms" data-toggle="modal">
+                                                Terms &amp; Conditions
+                                            </a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-actions">
+                                    <div class="col-md-8 offset-md-4">
+                                        <button type="submit" class="btn btn-effect-ripple btn-primary">Submit</button>
+                                        <button type="reset" class="btn btn-effect-ripple btn-default reset_btn">Reset
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="modal-terms" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title text-center">
+                                                <strong>
+                                                    Terms and Conditions
+                                                </strong>
+                                            </h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4 class="page-header">
+                                                1.
+                                                <strong>General</strong>
+                                            </h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                                ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac
+                                                cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta.
+                                                Integer fermentum tincidunt auctor.
+                                            </p>
+                                            <h4 class="page-header">
+                                                2.
+                                                <strong>Account</strong>
+                                            </h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                                ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac
+                                                cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta.
+                                                Integer fermentum tincidunt auctor.
+                                            </p>
+                                            <h4 class="page-header">
+                                                3.
+                                                <strong>Service</strong>
+                                            </h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                                ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac
+                                                cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta.
+                                                Integer fermentum tincidunt auctor.
+                                            </p>
+                                            <h4 class="page-header">
+                                                4.
+                                                <strong>Payments</strong>
+                                            </h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                                ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac
+                                                cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta.
+                                                Integer fermentum tincidunt auctor.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-effect-ripple btn-primary"
+                                                        data-dismiss="modal">
+                                                    I've read them!
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-info">
+                        <div class="card-header bg-info text-white">
+                            <h3 class="card-title d-inline">
+                                <i class="fa fa-fw fa-pencil-square-o"></i> Registration Form Validation
+                            </h3>
+                            <span class="pull-right">
+                                    <i class="fa fa-fw fa-chevron-up clickable"></i>
+                                    <i class="fa fa-fw fa-times removepanel clickable"></i>
+                                </span>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="form-group ">
+                                    <div class="alert alert-success alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert"
+                                                aria-hidden="true">&times;</button>
+                                        Validation will be completed on Tab or Enter key press.
+                                    </div>
+                                    <label for="validate-text">
+                                        Validate Text
+                                    </label>
+                                    <div class="input-group input-group-append">
+                                        <input type="text" class="form-control" name="validate-text" id="validate-text"
+                                               placeholder="Enter Validate Text" required>
+                                        <span class="input-group-text border-left-0 rounded-0 danger">
+                                                <span class="fa fa-close"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validate-optional">Optional</label>
+                                    <div class="input-group input-group-append">
+                                        <input type="text" class="form-control" name="validate-optional"
+                                               id="validate-optional" placeholder="Optional">
+                                        <span class="input-group-text border-left-0 rounded-0 info">
+                                                <span class="fa fa-asterisk"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validate-email">
+                                        Validate Email
+                                    </label>
+                                    <div class="input-group input-group-append" data-validate="email">
+                                        <input type="text" class="form-control" name="validate-email"
+                                               id="validate-email" placeholder="Enter Validate Email" required>
+                                        <span class="input-group-text border-left-0 rounded-0 danger">
+                                                <span class="fa fa-close"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validate-phone">
+                                        Validate Phone
+                                    </label>
+                                    <div class="input-group input-group-append" data-validate="phone">
+                                        <input type="text" class="form-control" name="validate-phone"
+                                               id="validate-phone" placeholder="(814) 555-1234" required>
+                                        <span class="input-group-text border-left-0 rounded-0 danger">
+                                                <span class="fa fa-close"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validate-length">
+                                        Minimum length 5 characters
+                                    </label>
+                                    <div class="input-group input-group-append" data-validate="length" data-length="5">
+                                        <textarea class="form-control resize_vertical" name="validate-length"
+                                                  id="validate-length" placeholder="Minimum length 5 characters"
+                                                  required></textarea>
+                                        <span class="input-group-text danger border-left-0 rounded-0">
+                                                <span class="fa fa-close"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validate-select">
+                                        Validate Select
+                                    </label>
+                                    <div class="input-group input-group-append">
+                                        <select class="form-control" name="validate-select" id="validate-select"
+                                                required>
+                                            <option value="">
+                                                Select an item
+                                            </option>
+                                            <option value="item_1">Item 1</option>
+                                            <option value="item_2">Item 2</option>
+                                            <option value="item_3">Item 3</option>
+                                        </select>
+                                        <span class="input-group-text danger border-left-0 rounded-0">
+                                                <span class="fa fa-close"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validate-number">
+                                        Validate Number
+                                    </label>
+                                    <div class="input-group input-group-append " data-validate="number">
+                                        <input type="text" class="form-control" name="validate-number"
+                                               id="validate-number" placeholder="Validate Number" required>
+                                        <span class="input-group-text danger rounded-0 border-left-0">
+                                                <span class="fa fa-close"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title d-inline">
+                                <i class="fa fa-fw fa-key"></i> Password Validation
+                            </h3>
+                            <span class="pull-right">
+                                        <i class="fa fa-fw fa-chevron-up clickable"></i>
+                                     <i class="fa fa-fw fa-times removepanel "></i>
+                                    </span>
+                        </div>
+                        <div class="card-body">
+                            <form action="#" method="post" id="passwordForm">
+                                <!-- CSRF Token -->
+                                <input type="hidden" name="_token" value="KgCjdhwc9sMwnjx2SkiKDa9rfCkQ8KrPVpnXg7yY"/>
+                                <input type="password" class="input-md form-control" name="password1" id="password1"
+                                       placeholder="New Password" autocomplete="off">
+                                <div class="row m-0">
+                                    <div class="col-sm-6 padding">
+                                        <span id="8char" class="fa fa-close"
+                                              style="color:#FE5B5B;"></span> 8 Characters Long
+                                        <br>
+                                        <span id="ucase" class="fa fa-close"
+                                              style="color:#FE5B5B;"></span> One Uppercase Letter
+                                    </div>
+                                    <div class="col-sm-6 padding">
+                                        <span id="lcase" class="fa fa-close"
+                                              style="color:#FE5B5B;"></span> One Lowercase Letter
+                                        <br>
+                                        <span id="num" class="fa fa-close" style="color:#FE5B5B;"></span>
+                                        One Number
+                                    </div>
+                                </div>
+                                <input type="password" class="input-md form-control" name="password2" id="password2"
+                                       placeholder="Repeat Password" autocomplete="off">
+                                <div>
+                                    <div class="col-sm-12 padding">
+                                        <span id="pwmatch" class="fa fa-check" style="color:#2ECC71;"></span>
+                                        Passwords Match
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <a href="#" class="col-12 btn btn-primary btn-load btn-md"
+                                       data-loading-text="Changing Password...">Change Password</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card border-warning">
+                                <div class="card-header bg-warning text-white">
+                                    <h3 class="card-title d-inline">
+                                        <i class="fa fa-fw fa-folder"></i> Validations In Modal
+                                    </h3>
+                                    <span class="pull-right">
+                                    <i class="fa fa-fw fa-chevron-up clickable"></i>
+                                    <i class="fa fa-fw fa-times removepanel clickable"></i>
+
+                                </span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <button type="button" class="btn btn-primary btn-lg center-block"
+                                                    data-toggle="modal" data-target="#myModal">
+                                                Click to open form in modal
+                                            </button>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                             aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title mt-0" id="myModalLabel">Form Modal</h4>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-hidden="true">×
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form  id="form-validation3" action="#">
+                                                            <div class="row">
+                                                                <div class="col-12 col-sm-6 col-md-6">
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="modalfirst_name"
+                                                                               id="modalfirst_name"
+                                                                               class="form-control input-md"
+                                                                               placeholder="First Name" tabindex="1"
+                                                                               data-error="First name must be entered"
+                                                                               required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6 col-md-6">
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="modallast_name"
+                                                                               id="modallast_name"
+                                                                               class="form-control input-md"
+                                                                               placeholder="Last Name" tabindex="2"
+                                                                               data-error="Last name must be entered"
+                                                                               required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="display_name"
+                                                                               id="display_name"
+                                                                               class="form-control input-md"
+                                                                               placeholder="Display Name" tabindex="3"
+                                                                               data-error="Username must be enetered"
+                                                                               required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="email"
+                                                                               class="form-control input-md"
+                                                                               placeholder="Email Address" tabindex="4"
+                                                                               data-error="that email address is invalid"
+                                                                               required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12 col-sm-6 col-md-6">
+                                                                    <div class="form-group">
+                                                                        <input type="password" name="modalpassword"
+                                                                               id="modalpassword"
+                                                                               class="form-control input-md"
+                                                                               placeholder="Password" tabindex="5"
+                                                                               required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 col-sm-6 col-md-6">
+                                                                    <div class="form-group">
+                                                                        <input type="password" name="confirmpassword"
+                                                                               class="form-control input-md"
+                                                                               placeholder="Confirm Password"
+                                                                               data-match="#password"
+                                                                               data-match-error="conform passwork should be same as password"
+                                                                               tabindex="6" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-8">
+                                                                            <label class="padding7 d-block" for="modalterms">
+                                                                                <input type="checkbox"
+                                                                                       class="custom_icheck"
+                                                                                       id="modalterms" name="modalterms"
+                                                                                       value="1">&nbsp;&nbsp;I agree
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="help-block with-errors"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p class="margin-top">
+                                                                        By clicking on the
+                                                                        <strong class="label bg-primary">Register</strong>
+                                                                        , you agree the following
+                                                                        <a href="#">Terms and Conditions</a> liability
+                                                                        as set out in this site, including our Cookie
+                                                                        Use.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row marginTop">
+                                                                <div class="col-6 col-md-6">
+                                                                    <input type="submit" id="btncheck" value="Register"
+                                                                           class="btn btn-primary btn-block btn-md btn-responsive"
+                                                                           tabindex="7">
+                                                                </div>
+                                                                <div class="col-6 col-md-6">
+                                                                    <a class="btn btn-success btn-block btn-md btn-responsive text-white">Sign
+                                                                        In</a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <!-- /.modal-content -->
+                                            </div>
+                                            <!-- /.modal-dialog -->
+                                        </div>
+                                        <!-- /.modal -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--image upload -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h3 class="card-title d-inline">
+                                                <i class="fa fa-fw fa-pencil"></i> Form Validations
+                                            </h3>
+                                            <span class="pull-right">
+                                    <i class="fa fa-fw fa-chevron-up clickable"></i>
+                                    <i class="fa fa-fw fa-times removepanel clickable"></i>
+                                </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <form action="#" name="frmOnline" onsubmit="return Validation()"
+                                                  enctype="multipart/form-data">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" name="txtName" id="txtName"
+                                                                   class="form-control input-md"
+                                                                   placeholder="First Name"></div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" name="last_name" id="txtlastname"
+                                                                   class="form-control input-md"
+                                                                   placeholder="Last Name"></div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" name="txtEmail" id="txtEmail"
+                                                                   class="form-control input-md"
+                                                                   placeholder="Enter Your Email Id"></div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" name="display_name" id="txtAddress1"
+                                                                   class="form-control input-md"
+                                                                   placeholder="Address Line1"></div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" name="display_name" id="txtAddress2"
+                                                                   class="form-control input-md"
+                                                                   placeholder="Address Line2"></div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+
+                                                            <select id="e1" class="form-control select2">
+                                                                <option value="">
+                                                                    Select State
+                                                                </option>
+                                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                </optgroup>
+                                                                <optgroup label="Pacific Time Zone">
+                                                                    <option value="CA">California</option>
+                                                                    <option value="NV">Nevada</option>
+                                                                    <option value="OR">Oregon</option>
+                                                                    <option value="WA">Washington</option>
+                                                                </optgroup>
+                                                                <optgroup label="Mountain Time Zone">
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="ID">Idaho</option>
+                                                                    <option value="MT">Montana</option>
+                                                                    <option value="NE">Nebraska</option>
+                                                                    <option value="NM">New Mexico</option>
+                                                                    <option value="ND">
+                                                                        North Dakota
+                                                                    </option>
+                                                                    <option value="UT">Utah</option>
+                                                                    <option value="WY">Wyoming</option>
+                                                                </optgroup>
+                                                                <optgroup label="Central Time Zone">
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="IL">Illinois</option>
+                                                                    <option value="IA">Iowa</option>
+                                                                    <option value="KS">Kansas</option>
+                                                                    <option value="KY">Kentucky</option>
+                                                                    <option value="LA">Louisiana</option>
+                                                                    <option value="MN">Minnesota</option>
+                                                                    <option value="MS">
+                                                                        Mississippi
+                                                                    </option>
+                                                                    <option value="MO">Missouri</option>
+                                                                    <option value="OK">Oklahoma</option>
+                                                                    <option value="SD">
+                                                                        South Dakota
+                                                                    </option>
+                                                                    <option value="TX">Texas</option>
+                                                                    <option value="TN">Tennessee</option>
+                                                                    <option value="WI">Wisconsin</option>
+                                                                </optgroup>
+                                                                <optgroup label="Eastern Time Zone">
+                                                                    <option value="CT">
+                                                                        Connecticut
+                                                                    </option>
+                                                                    <option value="DE">Delaware</option>
+                                                                    <option value="FL">Florida</option>
+                                                                    <option value="GA">Georgia</option>
+                                                                    <option value="IN">Indiana</option>
+                                                                    <option value="ME">Maine</option>
+                                                                    <option value="MD">Maryland</option>
+                                                                    <option value="MA">
+                                                                        Massachusetts
+                                                                    </option>
+                                                                    <option value="MI">Michigan</option>
+                                                                    <option value="NH">
+                                                                        New Hampshire
+                                                                    </option>
+                                                                    <option value="NJ">New Jersey</option>
+                                                                    <option value="NY">New York</option>
+                                                                    <option value="NC">
+                                                                        North Carolina
+                                                                    </option>
+                                                                    <option value="OH">Ohio</option>
+                                                                    <option value="PA">
+                                                                        Pennsylvania
+                                                                    </option>
+                                                                    <option value="RI">
+                                                                        Rhode Island
+                                                                    </option>
+                                                                    <option value="SC">
+                                                                        South Carolina
+                                                                    </option>
+                                                                    <option value="VT">Vermont</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WV">
+                                                                        West Virginia
+                                                                    </option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" name="display_name" id="txtPhone"
+                                                                   class="form-control input-md"
+                                                                   placeholder="Phone Number"></div>
+                                                    </div>
+                                                    <div class="col-md-12 row">
+                                                        <div class="col-6 col-md-4 col-md-offset-4">
+                                                            <input type="submit" id="btncheck1" value="Register"
+                                                                   class="btn btn-primary btn-block btn-md btn-responsive"
+                                                                   tabindex="7">
+                                                        </div>
+
+                                                        <div class="col-6 col-md-4">
+                                                            <input type="reset" value="Cancel"
+                                                                   class="btn btn-success btn-block btn-md btn-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card border-default">
+                                        <div class="card-header bg-default">
+                                            <h3 class="card-title d-inline">
+                                                <i class="fa fa-fw fa-keyboard-o"></i> Bootstrap Input MaxLength
+                                            </h3>
+                                            <span class="pull-right">
+                                    <i class="fa fa-fw fa-times removepanel clickable"></i>
+                                </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <!--max length starts-->
+                                            <div class="form-group">
+                                                <label for="placement" class="control-label">
+                                                    Custom Position
+                                                </label>
+                                                <input type="text" class="form-control" maxlength="25" name="placement"
+                                                       id="placement"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="moreoptions" class="control-label">Options</label>
+                                                <input type="text" class="form-control" maxlength="25"
+                                                       name="moreoptions" id="moreoptions"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="alloptions" class="control-label">
+                                                    All the options
+                                                </label>
+                                                <input type="text" class="form-control" maxlength="25" name="alloptions"
+                                                       id="alloptions"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="textarea" class="control-label">Text Area</label>
+                                                <textarea id="textarea" class="form-control resize_vertical"
+                                                          maxlength="225" rows="4"
+                                                          placeholder="This text area has a limit of 225 chars."></textarea>
+                                            </div>
+                                            <!--min length ends-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-6 -->
+                        <!--row ends-->
+                        <div id="right">
+                            <div id="slim2">
+                                <div class="rightsidebar-right">
+                                    <div class="rightsidebar-right-content">
+                                        <h5 class="rightsidebar-right-heading rightsidebar-right-heading-first text-uppercase text-xs">
+                                            <i class="menu-icon  fa fa-fw fa-paw"></i> Contacts
+                                        </h5>
+                                        <ul class="list-unstyled margin-none">
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar1.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-primary"></i> Alanis
+                                                </a>
+                                            </li>
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-primary"></i> Rolando
+                                                </a>
+                                            </li>
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar2.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-primary"></i> Marlee
+                                                </a>
+                                            </li>
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar3.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-warning"></i> Marlee
+                                                </a>
+                                            </li>
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar4.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-danger"></i> Kamryn
+                                                </a>
+                                            </li>
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar5.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-muted"></i> Cielo
+                                                </a>
+                                            </li>
+                                            <li class="rightsidebar-contact-wrapper">
+                                                <a class="rightsidebar-contact" href="#">
+                                                    <img src="img/authors/avatar7.jpg" height="20" width="20"
+                                                         class="rounded-circle pull-right" alt="avatar-image">
+                                                    <i class="fa fa-circle text-xs text-muted"></i> Charlene
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <h5 class="rightsidebar-right-heading text-uppercase text-xs">
+                                            <i class="fa fa-fw fa-tasks"></i> Tasks
+                                        </h5>
+                                        <ul class="list-unstyled m-t-25">
+                                            <li>
+                                                <div>
+                                                    <p>
+                                                        <strong>Task 1</strong>
+                                                        <small class="pull-right text-muted">
+                                                            40% Complete
+                                                        </small>
+                                                    </p>
+                                                    <div class="progress progress-xs progress-striped active">
+                                                        <div class="progress-bar bg-success" role="progressbar"
+                                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 40%">
+                                                    <span class="sr-only">
+                                                        40% Complete (success)
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <p>
+                                                        <strong>Task 2</strong>
+                                                        <small class="pull-right text-muted">
+                                                            20% Complete
+                                                        </small>
+                                                    </p>
+                                                    <div class="progress progress-xs progress-striped active">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 20%">
+                                                    <span class="sr-only">
+                                                        20% Complete
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <p>
+                                                        <strong>Task 3</strong>
+                                                        <small class="pull-right text-muted">
+                                                            60% Complete
+                                                        </small>
+                                                    </p>
+                                                    <div class="progress progress-xs progress-striped active">
+                                                        <div class="progress-bar bg-warning" role="progressbar"
+                                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 60%">
+                                                    <span class="sr-only">
+                                                        60% Complete (warning)
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <p>
+                                                        <strong>Task 4</strong>
+                                                        <small class="pull-right text-muted">
+                                                            80% Complete
+                                                        </small>
+                                                    </p>
+                                                    <div class="progress progress-xs progress-striped active">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                             style="width: 80%">
+                                                    <span class="sr-only">
+                                                        80% Complete (danger)
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <h5 class="rightsidebar-right-heading text-uppercase text-xs">
+                                            <i class="fa fa-fw fa-group"></i> Recent Activities
+                                        </h5>
+                                        <div>
+                                            <ul class="list-unstyled">
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-comment fa-fw text-primary"></i> New Comment
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter fa-fw text-success"></i> 3 New Followers
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-envelope fa-fw text-info"></i> Message Sent
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-tasks fa-fw text-warning"></i> New Task
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-upload fa-fw text-danger"></i> Server Rebooted
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-warning fa-fw text-primary"></i> Server Not Responding
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-shopping-cart fa-fw text-success"></i> New Order Placed
+                                                    </a>
+                                                </li>
+                                                <li class="rightsidebar-notification">
+                                                    <a href="#">
+                                                        <i class="fa fa-money fa-fw text-info"></i> Payment Received
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+
+            <!-- right side bar end -->
+        </section>
+        <!-- /.content -->
+    </aside>
+    <!-- /.right-side -->
+</div>
+<!-- ./wrapper -->
+<!-- global js -->
+<script src="js/app.js" type="text/javascript"></script>
+<!-- end of global js -->
+<!-- begining of page level js -->
+<script src="vendors/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+<script type="text/javascript" src="vendors/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+<script src="vendors/bootstrap-maxlength/js/bootstrap-maxlength.js"></script>
+<script src="vendors/iCheck/js/icheck.js"></script>
+<script src="js/custom_js/form1.js"></script>
+<script src="js/custom_js/form2.js"></script>
+<script src="js/custom_js/form3.js"></script>
+<script src="js/custom_js/form_validations.js"></script>
+<!-- end of page level js -->
+</body>
+
+</html>

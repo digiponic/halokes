@@ -1,0 +1,39 @@
+#table1 th,
+#table1 td {
+    white-space: nowrap;
+}
+
+#table5_filter {
+    display: none;
+}
+
+.horizontal_table {
+    width: 100% !important;;
+}
+
+.dataTables_scrollHeadInner{
+    width: 100% !important;
+    min-width: 1109px !important;
+}
+.pagination .page-item.disabled .page-link,.pagination .page-item.disabled .page-link:focus
+{
+    color: #dcdcdc;
+
+    cursor: not-allowed;
+}
+/*update css*/
+.table.horizontal_table th
+{
+    border-top:none;
+}
+.table.horizontal_table th:first-child
+{
+    padding-right: 19px !important;
+}
+.table.horizontal_table th:first-child:before
+{
+    right: 0 !important;
+}
+#table4_filter.dataTables_filter{
+    margin-top: 1rem;
+}

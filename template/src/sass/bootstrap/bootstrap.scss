@@ -1,0 +1,41 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:600,400');
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "variables";
+//@import "~buttons/buttons.scss";
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    color: #fff;
+    background-color: $value;
+    border-color: $value;
+  }
+  .close {
+
+    color: #fff;
+  }
+  .alert-link {
+    color:#e6e6e6 !important;
+  }
+}
+.alert{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem !important;
+  line-height: 1.5;
+}
+hr{
+border-top:1px solid #eee;
+}
+
+
+
+
+
+

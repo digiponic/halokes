@@ -1,0 +1,204 @@
+.editor-clr {
+    color : #fff;
+}
+.editor-cls {
+    width       : 100%;
+    height      : 200px;
+    font-size   : 14px;
+    line-height : 18px;
+    border      : 1px solid #dddddd;
+    padding     : 10px;
+}
+.pd-15 {
+    padding : 0 15px;
+}
+/*summer note */
+
+.note-editor.fullscreen {
+    margin : 0;
+}
+.note-editor {
+    margin : 20px;
+}
+.note-editable {
+    height : 300px;
+    width  : 100%;
+}
+.well {
+    margin-bottom : 0;
+}
+.panel-default > .panel-heading {
+    border-color     : #a9b6bc;
+    background-color : #EBEBEB;
+}
+.panel_bgcolor {
+    background-color : #F5F5F5;
+}
+.flip_editing {
+    background-color : #F5F5F5;
+}
+.summer_noted {
+    margin : -20px;
+}
+.trumbowyg-modal-box .trumbowyg-modal-button.trumbowyg-modal-reset:hover {
+    background : #e6e6e6;
+}
+.trumbowyg-modal-box .trumbowyg-modal-button.trumbowyg-modal-submit {
+    background : #01bc8c;
+}
+.trumbowyg-modal-submit:hover {
+    background-color : #01BC8C !important;
+}
+.trumbowyg-box {
+    background-color : #fff;
+}
+ul {
+    list-style-type : disc;
+}
+.modal .text-muted {
+    color : #333;
+}
+a[data-wysihtml5-command="insertImage"],
+.wysihtml5-toolbar > li:nth-child(5),
+.bootstrap-wysihtml5-insert-link-modal {
+    display: none;
+}
+/*whysihtml*/
+
+/*summer note color picker dropdown rensponsive*/
+
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    position : relative;
+    margin   : 4px 5px;
+}
+@media screen and (max-width : 700px) {
+    .panel-heading.note-toolbar .note-color .dropdown-menu {
+        min-width : 180px;
+        left      : -123px;
+    }
+}
+@media screen and (max-width : 402px) {
+    .panel-heading.note-toolbar .note-color .dropdown-menu {
+        left : 0;
+    }
+}
+@media screen and (max-width : 345px) {
+    .panel-heading.note-toolbar .note-color .dropdown-menu {
+        left : -59px;
+    }
+}
+.panel-heading.note-toolbar .note-para .dropdown-menu {
+    min-width : 152px;
+}
+@media screen and (max-width : 400px) {
+    .trumbowyg-dropdown {
+        left : 50px !important;
+    }
+}
+/*bootstrap 4 update css*/
+
+.wysihtml5-toolbar li
+{
+    color:#000;
+}
+.note-toolbar
+{
+    position: relative !important;
+}
+.wysihtml5-toolbar .btn-group
+{
+    display: inline-table;
+}
+.note-toolbar-wrapper .card-header
+{
+    background-color:#EBEBEC;
+}
+.note-btn-group .btn-light
+{
+    background-color:#DCDCDC;
+    border-color:#dcdcdc;
+}
+.wysihtml5-toolbar
+{
+    position:relative;
+}
+.wysihtml5-toolbar .dropdown-menu li
+{
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #333;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.wysihtml5-toolbar .dropdown-menu
+{
+    transform: none !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-indicator {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E")
+}
+.custom-control-input:checked~.custom-control-indicator {
+    color: #fff !important;
+    background-color: #007bff;
+}
+.custom-control-indicator {
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border:1px solid #ddd;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+
+}
+.card-header.note-toolbar .dropdown-menu
+{
+    font-size: 14px;
+}
+.modal-body .note-image-url:focus
+{
+    border-color:#66afe9;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.summer_noted .note-editor div.modal:nth-child(8)>.modal-dialog>.modal-content>div:nth-child(3),
+.summer_noted .card.fullscreen div.modal:nth-child(9)>.modal-dialog>.modal-content>div:nth-child(3),
+.summer_noted .note-editor div.modal:nth-child(9)>.modal-dialog>.modal-content>div:nth-child(3)
+
+{
+    justify-content:center !important;
+}
+.summer_noted .note-editor div.modal:nth-child(8)>.modal-dialog>.modal-content .modal-title
+{
+    margin-top: 0;
+}
+.fullscreen .note-toolbar-wrapper
+{
+    height: 0 !important;
+}
+.link-dialog + div .modal-dialog .modal-title
+{
+    margin-top: 0;
+}
+.summer_noted .modal .modal-title
+{
+    margin-top: 0;
+}
+
+.note-format
+{
+    height: 0 !important;
+}

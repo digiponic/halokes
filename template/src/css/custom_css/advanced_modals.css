@@ -1,0 +1,121 @@
+#color_modal .modal-header {
+    border-radius : 6px 6px 0 0;
+}
+.input-group {
+    width : 100%;
+}
+button {
+    margin-top : 10px;
+}
+.modal-content {
+    border : none;
+}
+.position_modal .modal-dialog {
+    position : fixed;
+}
+#top_modal .modal-dialog {
+    top       : 0;
+    margin    : 0 0 0 50%;
+    transform : translateX(-50%);
+}
+#center_modal .modal-dialog {
+    top       : 50%;
+    margin    : 0 0 0 50%;
+    transform : translate(-50%, -50%);
+}
+#bottom_modal .modal-dialog {
+    bottom    : 0;
+    margin    : 0 0 0 50%;
+    transform : translateX(-50%);
+}
+@media screen and (max-width : 768px) {
+    #top_modal .modal-dialog,
+    #center_modal .modal-dialog,
+    #bottom_modal .modal-dialog {
+        width : 100%;
+    }
+}
+#sidebar_modal .modal-dialog {
+    position : absolute;
+    right    : 0;
+    top      : 20%;
+    left     : auto;
+    width    : 270px;
+}
+#grid_modal .row {
+    border     : 1px solid #dcdcdc;
+    padding    : 3px;
+    margin-top : 2px;
+}
+#grid_modal .modal-body {
+    padding : 25px;
+}
+.panel-title > a {
+    display : block;
+}
+#fill_modal .modal-backdrop {
+    opacity : 1;
+}
+/*update css*/
+body
+{   padding-right:0 !important;
+}
+.additional-model .modal-dialog,.bootstrap-modal .modal-dialog,.modal-color .modal-dialog,.modal-styles .modal-dialog
+{
+
+    padding: 0 18px 0 4px;
+}
+.close {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+.adv-modal .modal-header .modal-title
+{
+    margin-top: 0;
+}
+.adv-modal .modal-lg
+{
+    width: 900px;
+}
+.adv-modal .modal-sm
+{
+    width: 300px;
+}
+#large_modal .modal-dialog
+{
+    max-width: 900px;
+}
+@media (min-width: 320px) and (max-width: 575px)
+{
+    #large_modal .modal-dialog
+    {
+        max-width: 320px;
+    }
+    #small_modal .modal-dialog.modal-sm
+    {
+        width: 320px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px)
+{
+    #large_modal .modal-dialog
+    {
+        max-width: 500px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+    #large_modal .modal-dialog
+    {
+        max-width: 700px;
+    }
+}
+#fill_modal
+{
+    background-color: #000;
+}

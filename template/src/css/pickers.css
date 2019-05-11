@@ -1,0 +1,49 @@
+#example28 + .btn-group > .multiselect {
+    min-width : 65px;
+}
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group,
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    border-radius : 0 ;
+}
+@media only screen and (min-width : 769px ) and (max-width : 1440px ) {
+    #example28-values {
+        margin-top : 10px;
+    }
+}
+.color_switch .bootstrap-switch-wrapper{
+    width: 78px !important;
+}
+.vertial-button-padding
+{
+    padding-right: 15px;
+}
+.input-group-add-on
+{
+    display:-webkit-box;
+    flex-wrap: nowrap;
+
+}
+/*-update css-*/
+.bootstrap-datetimepicker-widget .collapse.in
+{
+    display: block;
+}
+a .fa-clock-o,a .fa-calendar
+{
+    color:#428BCA;
+}
+.bootstrap-datetimepicker-widget li.collapse.show
+{
+    display: none;
+}
+.show1
+{
+    display:block !important;
+}
+.bootstrap-switch .bootstrap-switch-handle-off{
+    padding:6px 8px;
+}
+.bootstrap-touchspin .input-group-btn-vertical > .btn,.btn-group>.btn-group:nth-child(2)>.multiselect.btn
+{
+    border-radius: 0 !important;
+}

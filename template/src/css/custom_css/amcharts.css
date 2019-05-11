@@ -1,0 +1,22 @@
+.amchart1 {
+    width: 100%;
+    height: 400px;
+}
+
+svg *,
+svg+a {
+    font-family: "Open Sans", sans-serif, verdana !important;
+}
+
+@media screen and (max-width: 425px) {
+    .panel-heading .clickable {
+        display: none;
+    }
+}
+
+.chartWindow svg {
+    min-width: 600px;
+}
+.chartWindow svg .dimple-chart {
+    /*min-width :100%;*/
+}

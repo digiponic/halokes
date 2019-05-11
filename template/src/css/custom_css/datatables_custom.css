@@ -1,0 +1,39 @@
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#example {
+    width: 100% !important;
+}
+.pagination .page-item.disabled .page-link,.pagination .page-item.disabled .page-link:focus
+{
+    color: #dcdcdc;
+
+    cursor: not-allowed;
+}
+.table tr th
+{
+    border-top:0;
+}
+table.dataTable
+{
+    border-collapse: collapse !important;
+}
+
+.table>thead>tr>td.danger, .table>thead>tr>th.danger, .table>thead>tr.danger>td, .table>thead>tr.danger>th, .table>tbody>tr>td.danger, .table>tbody>tr>th.danger, .table>tbody>tr.danger>td, .table>tbody>tr.danger>th, .table>tfoot>tr>td.danger, .table>tfoot>tr>th.danger, .table>tfoot>tr.danger>td, .table>tfoot>tr.danger>th{
+    background-color: #fb8678;
+}
+.m-t-6
+{
+    margin-top: 6px !important;
+}
+#sample_1_filter input.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
