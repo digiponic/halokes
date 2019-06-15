@@ -1,12 +1,12 @@
-<div class="page has-sidebar-left">
-    <header class="my-3">
-        <div class="container-fluid">
-            <div class="row">
+<div class="page has-sidebar-left height-full">
+    <header class="blue accent-3 relative nav-sticky">
+        <div class="container-fluid text-white">
+            <div class="row p-t-b-10 ">
                 <div class="col">
-                    <h1 class="s-24">
-                        <i class="icon-pages"></i>
-                        Blank <span class="s-14">Get Started</span>
-                    </h1>
+                    <h4>
+                        <i class="icon-dashboard2"></i>
+                        Dashboard
+                    </h4>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@
     <title>Paper</title>
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/app.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
     <style>
         .loader {
             position: fixed;
@@ -95,26 +96,26 @@
                     </div>
                     <div class="float-left info">
                         <h6 class="font-weight-light mt-2 mb-1">Alexander Pierce</h6>
-                        <a href="#"><i class="icon-circle text-primary blink"></i>&nbsp;&nbsp;2018/2019 Smt Genap</a>
+                        <a href="#">2018/2019 Smt Genap</a>
                     </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="collapse multi-collapse" id="userSettingsCollapse">
                     <div class="list-group mt-3 shadow">
                         <a href="index.html" class="list-group-item list-group-item-action ">
-                            <i class="mr-2 icon-umbrella text-blue"></i>Profile
+                            <i class="mr-2 icon-umbrella text-blue"></i>Profil
                         </a>
                         <a href="#" class="list-group-item list-group-item-action"><i
-                                class="mr-2 icon-cogs text-yellow"></i>Settings</a>
+                                class="mr-2 icon-cogs text-yellow"></i>Pengaturan</a>
                         <a href="#" class="list-group-item list-group-item-action"><i
-                                class="mr-2 icon-security text-purple"></i>Change Password</a>
+                                class="mr-2 icon-security text-purple"></i>Ganti Password</a>
                     </div>
                 </div>
             </div>
         </div>
         <ul class="sidebar-menu">
             <li class="treeview">
-                <a href="#">
+                <a href="<?php echo site_url('dashboard') ?>">
                 <i class="icon icon-dashboard2 blue-text s-18"></i> 
                     <span>Dashboard</span>
                 </a>
@@ -126,7 +127,7 @@
                 </a>
             </li>
             <li class="treeview">
-                <a href="#">
+                <a href="<?php echo site_url('ekstrakurikuler') ?>">
                 <i class="icon icon-basketball blue-text s-18"></i> 
                     <span>Ekstrakurikuler</span>
                 </a>
@@ -138,7 +139,7 @@
                     <i class="icon icon-angle-left s-18 pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="icon icon-circle-o"></i>Presensi KBM</a></li>
+                    <li><a href="<?php echo site_url('presensi/kbm') ?>"><i class="icon icon-circle-o"></i>Presensi KBM</a></li>
                     <li><a href="#"><i class="icon icon-circle-o"></i>Presensi Ekstrakurikuler</a></li>
                 </ul>
             </li>
@@ -149,7 +150,7 @@
                     <i class="icon icon-angle-left s-18 pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="icon icon-circle-o"></i>Data Guru</a></li>
+                    <li><a href="<?php echo site_url('guru/pengajar') ?>"><i class="icon icon-circle-o"></i>Data Pengajar</a></li>
                     <li><a href="#"><i class="icon icon-circle-o"></i>Silabus / RPP</a></li>
                     <li><a href="#"><i class="icon icon-circle-o"></i>Program Semester</a></li>
                 </ul>
