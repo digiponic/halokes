@@ -95,7 +95,7 @@
                         <img class="user_avatar" src="<?php echo base_url() ?>assets/img/dummy/u2.png" alt="User Image">
                     </div>
                     <div class="float-left info">
-                        <h6 class="font-weight-light mt-2 mb-1">Alexander Pierce</h6>
+                        <h6 class="font-weight-light mt-2 mb-1"><?php echo $userid ?></h6>
                         <a href="#">2018/2019 Smt Genap</a>
                     </div>
                 </div>
@@ -120,6 +120,7 @@
                     <span>Dashboard</span>
                 </a>
             </li>
+            <li class="header light mt-3"><strong>MENU KURIKULUM</strong></li>
             <li class="treeview">
                 <a href="#">
                 <i class="icon icon-school blue-text s-18"></i> 
@@ -211,6 +212,7 @@
                     <li><a href="#"><i class="icon icon-circle-o"></i>Kalender Akademik</a></li>
                 </ul>
             </li>
+            <li class="header light mt-3"><strong>MENU GURU</strong></li>
         </ul>
     </section>
 </aside>
