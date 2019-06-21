@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2019 at 04:27 AM
+-- Generation Time: Jun 21, 2019 at 03:06 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.0.32
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_halokes`
+-- Database: `db_halokes_ver1.0`
 --
 
 -- --------------------------------------------------------
@@ -263,7 +263,7 @@ CREATE TABLE `tbl_master_ekskul` (
 
 CREATE TABLE `tbl_master_guru` (
   `id_guru` int(11) NOT NULL,
-  `id_guru_url` varchar(20) DEFAULT NULL,
+  `id_guru_url` varchar(10) DEFAULT NULL,
   `guru_nama` varchar(50) DEFAULT NULL,
   `guru_nip` varchar(15) DEFAULT NULL,
   `guru_nign` varchar(30) DEFAULT NULL,
@@ -281,6 +281,14 @@ CREATE TABLE `tbl_master_guru` (
   `modified_at` datetime DEFAULT NULL,
   `status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_master_guru`
+--
+
+INSERT INTO `tbl_master_guru` (`id_guru`, `id_guru_url`, `guru_nama`, `guru_nip`, `guru_nign`, `guru_gelar_depan`, `guru_gelar_belakang`, `guru_tgl_lahir`, `guru_tempat_lahir`, `guru_jkel`, `guru_no_hp`, `guru_email`, `guru_agama`, `guru_username`, `guru_password`, `created_at`, `modified_at`, `status`) VALUES
+(1, 'bgA9Hx7Hsl', 'AHMAD MUCHLISIN', '110038', NULL, 'Ir.', 'S.Kom., M.MT', '1970-10-01', 'Pasuruan', 'L', '085230230202', 'muchlisin@isku.com', 'Islam', 'muchlisin@isku.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '2019-06-15 19:50:41', NULL, 1),
+(2, 'cEO6lNf3W0', 'ENDRO SUHARDI', '110037', NULL, NULL, 'S.Pd., M.Pd.', '1978-10-10', 'Malang', 'L', '089650691537', 'endros@isku.com', 'Islam', 'endros@isku.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '2019-06-15 19:53:31', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -325,8 +333,8 @@ CREATE TABLE `tbl_master_sanksi` (
 
 CREATE TABLE `tbl_master_siswa` (
   `id_siswa` int(11) NOT NULL,
-  `id_tapel` int(11) DEFAULT NULL,
   `id_siswa_ortu` int(11) DEFAULT NULL,
+  `id_tapel` int(11) DEFAULT NULL,
   `id_siswa_url` varchar(20) DEFAULT NULL,
   `siswa_nama` varchar(50) DEFAULT NULL,
   `siswa_nisn` varchar(30) DEFAULT NULL,
@@ -338,6 +346,8 @@ CREATE TABLE `tbl_master_siswa` (
   `siswa_no_hp` varchar(20) DEFAULT NULL,
   `siswa_email` varchar(100) DEFAULT NULL,
   `siswa_agama` varchar(10) DEFAULT NULL,
+  `siswa_username` varchar(20) DEFAULT NULL,
+  `siswa_password` varchar(100) DEFAULT NULL,
   `siswa_status` int(11) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `modified_at` datetime DEFAULT NULL,
@@ -460,8 +470,8 @@ CREATE TABLE `tbl_siswa_mutasi` (
 
 CREATE TABLE `tbl_siswa_ortu` (
   `id_siswa_ortu` int(11) NOT NULL,
-  `id_siswa` int(11) NOT NULL,
   `id_siswa_ortu_url` varchar(20) DEFAULT NULL,
+  `id_siswa` int(11) NOT NULL,
   `nama_ayah` varchar(50) DEFAULT NULL,
   `no_hp_ayah` varchar(20) DEFAULT NULL,
   `nama_ibu` varchar(50) DEFAULT NULL,
